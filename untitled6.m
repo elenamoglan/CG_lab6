@@ -52,3 +52,4 @@ axis equal;
 title('Delaunay Triangulation with Filled Triangles');
 xlabel('x');
 ylabel('y');
+grid on;
