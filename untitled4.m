@@ -34,6 +34,7 @@ title('Voronoi Diagram with Convex Hull');
 xlabel('X');
 ylabel('Y');
 axis equal;
+grid;
 
 % Highlight convex hull points
 scatter(convex_hull_points(:,1), convex_hull_points(:,2), 70, 'filled', 'r'); % Convex hull vertices in red
@@ -41,5 +42,5 @@ hold off;
 
 % Display number of half-lines
 num_half_lines = length(k) - 1;  % Remove duplicate closing point
-disp('Number of half-lines in the Voronoi diagram:');
-disp(num_half_lines);
+x = sprintf('Number of half-lines in the Voronoi diagram: %d', num_half_lines);
+disp(x);
